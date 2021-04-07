@@ -1,0 +1,27 @@
+version: "2.0"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - rule: Say you are welcome anytime the user says thanks
+    steps:
+      - intent: thanks
+      - action: utter_reply_thanks
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+#  - rule: Automatically trigger answer_direction if the user ask_direction
+#    steps:
+#      - intent: ask_direction
+#      - action: action_answer_direction
+#  - rule: Automatically trigger answer_explaination if the user ask_explain
+#    steps:
+#      - intent: ask_explaination
+#      - action: action_answer_explain
+#  - rule: Automatically trigger answer_inquiry if the user ask inquiry
+#    steps:
+#      - intent: ask_inquiry
+#      - action: action_answer_inquiry

@@ -1,0 +1,99 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - morning
+      - assalamualaikum
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - Hi there
+      - Hi
+      - Hey
+      - Hello
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: thanks
+    examples: |
+      - thx
+      - thanks
+      - thanks for your support
+      - thank you
+      - sure thanks
+      - ok thank you
+      - thankx
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: ask_direction
+    examples: |
+      - where is [Lab 5](place)
+      - give me the direction to [Lecturers Office](place)
+      - show me how to go to [Viva Room](place)
+      - i want to go to [Server Room](place) can you guide me
+      - oh i forgot where is [Lab 1](place)?😂 can you tell me again?
+      - tell me the direction to [Office](place)
+      - i want to go to [Dean Office](place)
+      - guide me to [School Office](place)
+
+  - intent: ask_explaination
+    examples: |
+      - what is [computer science](explain_subject)
+      - explain to me what is [cs](explain_subject)
+      - what is [degree of computer science](explain_subject)
+      - explain to me what is [cs society]
+      - tell me about [computer science](explain_subject)
+
+  - intent: ask_inquiry
+    examples: |
+      - why we have to do [industrial training](inquiry_subject)
+      - is there a reason to do [internship](inquiry_subject)
+      - it is needed to do [internship](inquiry_subject)

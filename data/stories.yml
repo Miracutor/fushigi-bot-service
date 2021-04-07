@@ -1,0 +1,151 @@
+version: "2.0"
+
+stories:
+
+  - story: normal_direction
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_direction
+        entities:
+          - place: dean office
+      - action: action_answer_direction
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: normal_explaination
+    steps:
+      - intent: ask_explaination
+        entities:
+          - explain_subject: cs society
+      - action: action_answer_explain
+      - intent: thanks
+      - action: utter_reply_thanks
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: normal_inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: internship
+      - action: action_answer_inquiry
+      - intent: thanks
+      - action: utter_reply_thanks
+
+  - story: multi_explanation_plus_direction
+    steps:
+      - intent: ask_explaination
+        entities:
+          - explain_subject: degree
+      - action: action_answer_explain
+      - intent: ask_explaination
+        entities:
+          - explain_subject: computer science
+      - action: action_answer_explain
+      - intent: ask_direction
+        entities:
+          - place: school office
+      - action: action_answer_direction
+      - intent: thanks
+      - action: utter_reply_thanks
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: multi_direction_plus_inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_direction
+        entities:
+          - place: lab 3
+      - action: action_answer_direction
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: internship
+      - action: action_answer_inquiry
+      - intent: ask_direction
+        entities:
+          - place: piegon hole
+      - action: action_answer_direction
+
+  - story: all_mix_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_direction
+        entities:
+          - place: server room
+      - action: action_answer_direction
+      - intent: ask_explaination
+        entities:
+          - explain_subject: cs society
+      - action: action_answer_explain
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: internship
+      - action: action_answer_inquiry
+      - intent: thanks
+      - action: utter_reply_thanks
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: all_mix_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: internship
+      - action: action_answer_inquiry
+      - intent: ask_direction
+        entities:
+          - place: lab 5
+      - action: action_answer_direction
+      - intent: ask_explaination
+        entities:
+          - explain_subject: cs
+      - action: action_answer_explain
+      - intent: ask_explaination
+        entities:
+          - explain_subject: cs society
+      - action: action_answer_explain
+      - intent: ask_direction
+        entities:
+          - place: surau
+      - action: action_answer_direction
+      - intent: thanks
+      - action: utter_reply_thanks
+
+  - story: all_mix_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_explaination
+        entities:
+          - explain_subject: degree of computer science
+      - action: action_answer_explain
+      - intent: ask_direction
+        entities:
+          - place: school office
+      - action: action_answer_direction
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: internship
+      - action: action_answer_inquiry
+      - intent: ask_direction
+        entities:
+          - place: dean office
+      - action: action_answer_direction
+      - intent: thanks
+      - action: utter_reply_thanks
+      - intent: goodbye
+      - action: utter_goodbye
