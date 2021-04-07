@@ -22,12 +22,11 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: '3.7'
-
-    - name: Build using AppService-Build
-      uses: azure/appservice-build@v2
-      with:
-        platform: python
-        platform-version: '3.7'
+    
+    - name: Install dependencies with pipenv
+      run: |
+         pip install pipenv
+         pipenv install --deploy --dev
 
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
