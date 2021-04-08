@@ -32,7 +32,7 @@ stories:
       - action: utter_shortintro
       - intent: ask_inquiry
         entities:
-          - inquiry_subject: internship
+          - inquiry_subject: minor
       - action: action_answer_inquiry
       - intent: thanks
       - action: utter_reply_thanks
@@ -89,7 +89,7 @@ stories:
       - action: action_answer_explain
       - intent: ask_inquiry
         entities:
-          - inquiry_subject: internship
+          - inquiry_subject: industrial training
       - action: action_answer_inquiry
       - intent: thanks
       - action: utter_reply_thanks
@@ -103,7 +103,7 @@ stories:
       - action: utter_shortintro
       - intent: ask_inquiry
         entities:
-          - inquiry_subject: internship
+          - inquiry_subject: final year project
       - action: action_answer_inquiry
       - intent: ask_direction
         entities:
@@ -111,7 +111,7 @@ stories:
       - action: action_answer_direction
       - intent: ask_explaination
         entities:
-          - explain_subject: cs
+          - explain_subject: dean
       - action: action_answer_explain
       - intent: ask_explaination
         entities:
@@ -131,7 +131,7 @@ stories:
       - action: utter_shortintro
       - intent: ask_explaination
         entities:
-          - explain_subject: degree of computer science
+          - explain_subject: major
       - action: action_answer_explain
       - intent: ask_direction
         entities:
@@ -139,7 +139,7 @@ stories:
       - action: action_answer_direction
       - intent: ask_inquiry
         entities:
-          - inquiry_subject: internship
+          - inquiry_subject: graduate
       - action: action_answer_inquiry
       - intent: ask_direction
         entities:
