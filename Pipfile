@@ -13,6 +13,10 @@ sanic = "~=20.3.0"
 multidict = "~=4.7.6"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

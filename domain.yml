@@ -52,10 +52,10 @@ entities:
 
 responses:
   utter_greet:
-    - text: Welcome to Fushigi System!
+    - text: Welcome to School of Computer Science!
 
   utter_shortintro:
-    - text: I can answer any of your questions related to the School of Computer Science.
+    - text: I can answer any of your questions related to the school and undergraduate studies.
 
   utter_goodbye:
     - text: "Bye"
