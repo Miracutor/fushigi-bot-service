@@ -91,16 +91,27 @@ nlu:
       - what is [degree of computer science](explain_subject)
       - explain to me what is [cs society]
       - tell me about [computer science](explain_subject)
-      - who is the current [dean](explain_subject)
+      - who is the current [dean](explain_subject) of our school
       - what is the [specialization](explain_subject) offered by the school
       - what is the [free software](explain_subject) offered by the school
       - what is the [specialization](explain_subject) can be taken by undergraduate
       - what is the [major](explain_subject) subjects that I can take?
+      - explain to me about the [student organization](explain_subject) in our school?
+      - tell me about [major](explain_subject) subjects that I can take
+      - tell me about [free software](explain_subject) offered by university
+      - what is the [degree](explain_subject) offered in our school?
 
   - intent: ask_inquiry
     examples: |
       - why we have to do [final year project](inquiry_subject)
       - is there a reason to do [internship](inquiry_subject)
-      - it is needed to do [project](inquiry_subject)
+      - it is needed to do [final year project](inquiry_subject)
       - what if I do not want to take [minor](inquiry_subject)
       - what I need to do to [graduate](inquiry_subject)
+      - how [old is school](inquiry_subject) of computer science
+      - why this school share [building with School of Mathematics](inquiry_subject)
+      - why this school share [building with Math](inquiry_subject)
+      - why this school share [building](inquiry_subject)
+      - how much is the [capacity of lecture hall](inquiry_subject)
+      - why the [wi-fi is slow](inquiry_subject)
+      - Why the [wi-fi is so slow](inquiry_subject)

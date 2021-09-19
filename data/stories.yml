@@ -149,3 +149,83 @@ stories:
       - action: utter_reply_thanks
       - intent: goodbye
       - action: utter_goodbye
+
+  - story: all_mix_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_explaination
+        entities:
+          - explain_subject: student organization
+      - action: action_answer_explain
+      - intent: ask_explaination
+        entities:
+          - explain_subject: degree
+      - action: action_answer_explain
+      - intent: ask_direction
+        entities:
+          - place: server room
+      - action: action_answer_direction
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: capacity of lecture hall
+      - action: action_answer_inquiry
+      - intent: ask_direction
+        entities:
+          - place: dean office
+      - action: action_answer_direction
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: building with school of mathematics
+      - action: action_answer_inquiry
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: wi-fi is slow
+      - action: action_answer_inquiry
+      - intent: thanks
+      - action: utter_reply_thanks
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: all_mix_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_shortintro
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: old is school
+      - action: action_answer_inquiry
+      - intent: ask_direction
+        entities:
+          - place: school office
+      - action: action_answer_direction
+      - intent: ask_explaination
+        entities:
+          - explain_subject: computer science
+      - action: action_answer_explain
+      - intent: ask_explaination
+        entities:
+          - explain_subject: degree
+      - action: action_answer_explain
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: capacity of lecture hall
+      - action: action_answer_inquiry
+      - intent: ask_direction
+        entities:
+          - place: dean office
+      - action: action_answer_direction
+      - intent: ask_inquiry
+        entities:
+          - inquiry_subject: building with school of mathematics
+      - action: action_answer_inquiry
+      - intent: ask_explaination
+        entities:
+          - explain_subject: free software
+      - action: action_answer_explain
+      - intent: thanks
+      - action: utter_reply_thanks
+      - intent: goodbye
+      - action: utter_goodbye

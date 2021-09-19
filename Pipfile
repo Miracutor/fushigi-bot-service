@@ -15,6 +15,11 @@ multidict = "~=4.7.6"
 [dev-packages]
 black = "*"
 
+[scripts]
+train = "pipenv run rasa train"
+run_module = "pipenv run rasa run"
+run_action = "pipenv run rasa run actions"
+
 [requires]
 python_version = "3.8"
 
